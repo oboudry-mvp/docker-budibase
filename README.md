@@ -1,6 +1,6 @@
-# Tuleap
+# Budibase on Docker
 
-Deploy Tuleap on a CentOS/8 Vagrant box using the official Tuleap Docker container.
+Deploy Budibase on a Rocky linux docker machine.
 
 ## Getting Started
 
@@ -18,8 +18,8 @@ Install git https://gitforwindows.org/
 Clone the repository onto your local machine
 
 ```
-git clone git@github.com:oboudry-mvp/tuleap-on-vagrant.git
-cd tuleap-on-vagrant
+git clone git@github.com:oboudry-mvp/docker-budibase.git
+cd docker-budibase
 ```
 
 Provision the virtual machine
@@ -28,7 +28,7 @@ Provision the virtual machine
 vagrant up
 ```
 
-Logon to the VM using `vagrant ssh` and run `docker-compose exec web cat /root/.tuleap_passwd` to get the admin password for your Tuleap installation.
+Connect to the budibase server using URL http://192.168.33.10:10000
 
 Once you're finished playing with the VM, you can either suspend it (can be restarted with `vagrant up`) or destroy it.
 
